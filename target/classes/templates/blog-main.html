@@ -10,10 +10,10 @@
 
 <div class="container mt-5">
     <h1>Main blog</h1>
-    <div th:each="elem : ${posts}" class="alert alert-into mt-2">
-        <h3 th:text="${elem.title}"/>
-        <p th:text="${elem.anons}"/>
-        <p><b>Views: </b> <span th:text= "${elem.views}"/></p>
+    <div class="alert alert-into mt-2" th:each="elem : ${posts}">
+        <h3 th:text="${elem.title}"></h3>
+        <p th:text="${elem.anons}"></p>
+        <p><b>Views: </b> <span th:text= "${elem.views}"></span></p>
         <a th:href="'/blog/' + ${elem.id}" class="btn btn-warning">More</a>
     </div>
 </div>

@@ -14,7 +14,7 @@
         <form method="post">
             <input type="text" th:value="${elem.title}" name = "title" placeholder="Add post name" class="form-control"><br>
             <input type="text" th:value="${elem.anons}" name="anons" placeholder="Add post anons" class="form-control"><br>
-            <textarea name="fullText" placeholder="Add post full text" class="form-control" th:text="${elem.fullText}" /><br>
+            <textarea name="fullText" placeholder="Add post full text" class="form-control" th:text="${elem.fullText}"></textarea><br>
             <button type = "submit" class = "btn btn-success">Edit post</button>
         </form>
     </div>
